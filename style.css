@@ -384,10 +384,11 @@ header {
 }
 .container {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
     gap: 15px;
     padding: 20px;
 }
+
 
 .container::-webkit-scrollbar {
     height: 6px;
@@ -685,5 +686,26 @@ header {
 img {
     max-width: 100%;
     height: auto;
+}
+
+    .container {
+        grid-template-columns: 1fr; /* paksa 1 kolom */
+    }
+
+    .card-info h3 {
+        font-size: 16px;
+    }
+
+    .desc {
+        font-size: 13px;
+    }
+
+    .title {
+        font-size: 16px;
+    }
+
+    .epic-title {
+        font-size: 22px;
+    }
 }
 
