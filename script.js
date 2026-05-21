@@ -95,11 +95,12 @@ function buildHero() {
  
     banner.innerHTML = slidesHTML + dotsHTML;
  
-    // auto rotate setiap 5 detik
-    heroInterval = setInterval(() => {
-        heroIndex = (heroIndex + 1) % heroItems.length;
-        goToSlide(heroIndex);
-    }, 5000);
+    clearInterval(heroInterval);
+
+heroInterval = setInterval(() => {
+    heroIndex = (heroIndex + 1) % heroItems.length;
+    goToSlide(heroIndex);
+}, 5000);
 }
  
 function goToSlide(index) {
