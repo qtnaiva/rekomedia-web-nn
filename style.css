@@ -45,10 +45,9 @@ img {
 .hero-slide img {
     width: 100%;
     height: 100%;
-    object-fit: contain;
-    object-position: center;
+    object-fit: cover;
+    object-position: center 20%;
     filter: brightness(0.5);
-    background: #000;
 }
  
 .hero-overlay {
