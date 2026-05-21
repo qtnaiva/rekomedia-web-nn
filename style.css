@@ -25,9 +25,10 @@ img {
 .hero {
     position: relative;
     width: 100%;
-    height: 520px;
+    height: 420px;
     overflow: hidden;
     background: #000;
+    height: 420px;
 }
  
 .hero-slide {
@@ -42,12 +43,13 @@ img {
     opacity: 1;
 }
  
-.hero-slide img {
+.hero-slide img{
     width: 100%;
     height: 100%;
     object-fit: cover;
     object-position: center 20%;
-    filter: brightness(0.5);
+    transform: scale(1);
+    background: #000;
 }
  
 .hero-overlay {
@@ -168,7 +170,7 @@ img {
 /* responsive hero */
 @media (max-width: 768px) {
     .hero {
-        height: 380px;
+        height: 260px;
     }
  
     .hero-info {
