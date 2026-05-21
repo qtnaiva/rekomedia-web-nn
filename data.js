@@ -1146,7 +1146,20 @@ const media = [
         latest: false,
         description: "Seorang wanita bernama Alfie mencoba mengungkap rahasia kelam masa lalu ayahnya yang kaya namun penuh misteri, hingga ia menemukan sebuah rumah tua yang menyimpan kekuatan gelap dan teror supranatural, di mana ia dan keluarganya mulai diteror oleh makhluk iblis yang berhubungan dengan perjanjian masa lalu yang belum selesai, membuat mereka harus berjuang untuk bertahan hidup dari kekuatan jahat tersebut."
     },
-    
+    	{
+        id: 78,
+        title: "Racket Boys",
+   		genre: "Sports, Comedy, Youth, Friendship",
+    	actor: "Tang Jun-sang, Kim Kang-hoon, Son Sang-yeon, Choi Hyun-wook",
+    	country: "Korea Selatan",
+    	year: 2021,
+    	rating: 8.5,
+        poster: "https://i1-c.pinimg.com/736x/96/bf/79/96bf792539ad1dc132143c0db12e055d.jpg",
+        trailer: "https://youtu.be/xKB11P9Na6g?si=Nmo8FHn7ZSB71q-R",
+        featured: false,
+        latest: true,
+        description: "Sekelompok remaja di desa kecil berusaha membangkitkan kembali tim bulu tangkis sekolah yang hampir dibubarkan. Dengan semangat persahabatan, kerja keras, dan mimpi besar, mereka menghadapi berbagai tantangan di dalam maupun luar lapangan. Drama ini menghadirkan kisah hangat tentang keluarga, masa muda, dan perjuangan meraih impian."
+    },
 	
 	
     
