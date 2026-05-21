@@ -208,15 +208,14 @@ header.top-bar {
 .container {
     display: flex;
     flex-direction: row;
-    gap: 14px;
-    padding: 10px 20px 20px;
+    gap: 16px;
+    padding: 10px 24px 24px;
     overflow-x: auto;
     overflow-y: visible;
     scroll-snap-type: x mandatory;
     -webkit-overflow-scrolling: touch;
 }
  
-/* sembunyikan scrollbar tapi tetap bisa scroll */
 .container::-webkit-scrollbar {
     height: 5px;
 }
@@ -234,11 +233,11 @@ header.top-bar {
 ===================== */
 .card {
     position: relative;
-    flex: 0 0 160px;
-    width: 160px;
+    flex: 0 0 185px;
+    width: 185px;
     cursor: pointer;
     overflow: hidden;
-    border-radius: 10px;
+    border-radius: 12px;
     display: flex;
     flex-direction: column;
     background: #1a1a1a;
@@ -494,6 +493,16 @@ header.top-bar {
 }
  
 /* =====================
+   RESPONSIVE — TABLET
+===================== */
+@media (max-width: 900px) {
+    .card {
+        flex: 0 0 160px;
+        width: 160px;
+    }
+}
+ 
+/* =====================
    RESPONSIVE — HP
 ===================== */
 @media (max-width: 600px) {
@@ -517,13 +526,13 @@ header.top-bar {
     }
  
     .card {
-        flex: 0 0 130px;
-        width: 130px;
+        flex: 0 0 140px;
+        width: 140px;
     }
  
     .container {
         gap: 10px;
-        padding: 8px 12px 16px;
+        padding: 8px 14px 16px;
     }
  
     .title {
@@ -545,5 +554,20 @@ header.top-bar {
  
     #mVideo {
         height: 170px;
+    }
+}
+ 
+/* =====================
+   RESPONSIVE — HP KECIL
+===================== */
+@media (max-width: 380px) {
+    .card {
+        flex: 0 0 125px;
+        width: 125px;
+    }
+ 
+    .epic-title {
+        font-size: 18px;
+        letter-spacing: 2px;
     }
 }
