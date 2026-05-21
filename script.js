@@ -71,7 +71,7 @@ function buildHero() {
     // buat slides
     let slidesHTML = heroItems.map((item, i) => `
         <div class="hero-slide ${i === 0 ? 'active' : ''}" onclick="openDetail(${item.id})">
-            <img src="${item.poster}" alt="${item.title}">
+            <img src="${item.banner || item.poster}" alt="${item.title}">
             <div class="hero-overlay"></div>
             <div class="hero-info">
                 <span class="hero-badge">${item.type === 'movie' ? '🎬 Movie' : '📺 Series'}</span>
@@ -122,7 +122,7 @@ function cardHTML(item, index) {
             data-year="${item.year}"
             onclick="openDetail(${item.id})">
             <div class="poster">
-                <img src="${item.poster}" alt="${item.title}">
+                <img src="${item.banner || item.poster}" alt="${item.title}">
                 <div class="rating">⭐ ${item.rating}</div>
                 ${item.season ? `<div class="season-badge">${item.season}</div>` : ""}
                 ${index !== undefined ? `<div class="badge">#${index + 1}</div>` : ""}
