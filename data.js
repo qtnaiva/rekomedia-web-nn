@@ -1149,7 +1149,7 @@ const media = [
     	{
         id: 78,
         title: "Racket Boys",
-   		genre: "Sports, Comedy, Youth, Friendship",
+   		genre: "Comedy,Sport, Youth, Friendship",
     	actor: "Tang Jun-sang, Kim Kang-hoon, Son Sang-yeon, Choi Hyun-wook",
     	country: "Korea Selatan",
     	year: 2021,
