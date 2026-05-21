@@ -682,16 +682,9 @@ header {
     #mVideo {
         height: 180px;
     }
-
     .container {
-        grid-template-columns: 1fr;   /* ← pindah ke DALAM */
+        grid-template-columns: 1fr; /* paksa 1 kolom */
     }
-}          /* ← kurung tutup media query dipindah ke paling bawah */
-
-img {
-    max-width: 100%;
-    height: auto;
-}
 
     .card-info h3 {
         font-size: 16px;
@@ -710,3 +703,7 @@ img {
     }
 }
 
+img {
+    max-width: 100%;
+    height: auto;
+}
