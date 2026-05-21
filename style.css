@@ -411,6 +411,32 @@ header.top-bar {
     color: white;
     text-align: left;
     animation: scaleUp 0.25s ease;
+    position: relative;
+}
+ 
+.modal-close {
+    position: absolute;
+    top: 12px;
+    right: 12px;
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    border: none;
+    background: rgba(255,255,255,0.1);
+    color: white;
+    font-size: 18px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: 0.2s;
+    z-index: 10;
+    line-height: 1;
+}
+ 
+.modal-close:hover {
+    background: rgba(255,0,0,0.5);
+    transform: scale(1.1);
 }
  
 @keyframes fadeIn {
