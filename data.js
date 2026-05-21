@@ -10,7 +10,8 @@ const media = [
         year: 2014,
         rating: 6.8,
         poster: "https://i.pinimg.com/736x/dd/5e/f2/dd5ef2a4158d9c003052e0866086a011.jpg",
-        trailer: "https://youtu.be/AwwbhhjQ9Xk?si=I957yuY7OCE46-LT",
+       	banner: "https://i1-c.pinimg.com/1200x/0c/69/1d/0c691dcfe8b8487e00f1af7ce0be568b.jpg",
+		trailer: "https://youtu.be/AwwbhhjQ9Xk?si=I957yuY7OCE46-LT",
         featured: true,
         latest: false,
         description: "Sekelompok remaja terjebak di labirin berbahaya dan berusaha mencari jalan keluar."
