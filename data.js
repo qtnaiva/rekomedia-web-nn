@@ -118,7 +118,8 @@ const media = [
         year: 2021,
         rating: 8.2,
         poster: "https://i.pinimg.com/1200x/00/a4/da/00a4da90194b9bf0022df6e65d141e08.jpg",
-        trailer: "https://youtu.be/ru0PmaWoHxM?si=-zgFaEmb-H6YRLyn",
+        banner: "https://i1-c.pinimg.com/736x/f0/02/73/f0027321b9884b1d9af4bd943d3826d8.jpg",
+		trailer: "https://youtu.be/ru0PmaWoHxM?si=-zgFaEmb-H6YRLyn",
         featured: false,
         latest: true,
         description: "Seorang tentara muda ditugaskan dalam unit khusus yang bertugas menangkap tentara yang melarikan diri dari wajib militer. Dalam setiap misi, ia menemukan berbagai kisah kelam dan alasan menyakitkan di balik para deserter, yang membuatnya mulai mempertanyakan sistem militer itu sendiri."
