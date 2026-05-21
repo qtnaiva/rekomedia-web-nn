@@ -4,36 +4,28 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>REKOMEDIA</title>
-	
     <link rel="stylesheet" href="style.css">
-	<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@700;900&display=swap" rel="stylesheet">
-	
-	<script src="data.js" defer></script>
-	<script src="script.js" defer></script>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@700;900&display=swap" rel="stylesheet">
+    <script src="data.js" defer></script>
+    <script src="script.js" defer></script>
 </head>
 <body>
 <header class="top-bar">
-    <div class="left-bar">
-        <div class="nav">
-            <a href="index.html" class="nav-link active">Home</a>
-            <a href="movie.html" class="nav-link">Movie</a>
-            <a href="series.html" class="nav-link">Series</a>
-        </div>
-    </div>
-    <div class="center-bar">
-        <h1 class="epic-title">🎬 REKOMEDIA</h1>
-        <h2 class="section-title"> Temukan Rekomendasi Movie dan Series Berbasis Media Digital</h2>
-    </div>
-    <div class="right-bar">
-        <div class="search-box">
-            <input type="text" id="searchInput" placeholder="Cari..." onkeyup="searchMedia()">
-            <div class="filter-wrapper">
-                <button class="filter-btn" onclick="toggleFilterMenu()">☰</button>
-                <div id="filterMenu" class="filter-menu">
-                    <div onclick="setFilter('actor')">Actor</div>
-                    <div onclick="setFilter('country')">Negara</div>
-                    <div onclick="setFilter('year')">Tahun</div>
-                </div>
+    <h1 class="epic-title">🎬 REKOMEDIA</h1>
+    <p class="section-title">Temukan Rekomendasi Movie dan Series Berbasis Media Digital</p>
+    <nav class="nav">
+        <a href="index.html" class="nav-link active">Home</a>
+        <a href="movie.html" class="nav-link">Movie</a>
+        <a href="series.html" class="nav-link">Series</a>
+    </nav>
+    <div class="search-box">
+        <input type="text" id="searchInput" placeholder="Cari..." onkeyup="searchMedia()">
+        <div class="filter-wrapper">
+            <button class="filter-btn" onclick="toggleFilterMenu()">☰</button>
+            <div id="filterMenu" class="filter-menu">
+                <div onclick="setFilter('actor')">Actor</div>
+                <div onclick="setFilter('country')">Negara</div>
+                <div onclick="setFilter('year')">Tahun</div>
             </div>
         </div>
     </div>
@@ -48,21 +40,19 @@
 </section>
 <div id="modal" class="modal" onclick="closeDetail()">
     <div class="modal-content" onclick="event.stopPropagation()">
-    <img id="mPoster">
-    <h2 id="mTitle"></h2>
-    <div class="detail-info">
-        <span id="mRating"></span>
-        <span id="mYear"></span>
-        <span id="mGenre"></span>
-		<span id="mCountry"></span>
+        <img id="mPoster" alt="">
+        <h2 id="mTitle"></h2>
+        <div class="detail-info">
+            <span id="mRating"></span>
+            <span id="mYear"></span>
+            <span id="mGenre"></span>
+            <span id="mCountry"></span>
+        </div>
+        <p id="mDesc"></p>
+        <p id="mActor"></p>
+        <iframe id="mVideo" frameborder="0" allowfullscreen></iframe>
+        <button onclick="playTrailer()" class="trailer-btn">▶ Play Trailer</button>
     </div>
-    <p id="mDesc"></p>
-    <p id="mActor"></p>
-	<iframe id="mVideo" frameborder="0" allowfullscreen></iframe>
-	<button onclick="playTrailer()" class="trailer-btn">
-    ▶ Play Trailer
-	</button>
-</div>
 </div>
 </body>
 </html>
